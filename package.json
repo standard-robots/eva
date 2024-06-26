@@ -1,0 +1,27 @@
+{
+  "name": "eva",
+  "type": "module",
+  "packageManager": "bun@1.1.17",
+  "license": "MIT",
+  "module": "index.ts",
+  "scripts": {
+    "start": "bun ./src/server.ts",
+    "dev": "bun test --watch",
+    "test": "bun test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@gitbeaker/rest": "^40.0.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "@types/bun": "latest",
+    "eslint": "9.4.0",
+    "eslint-plugin-format": "^0.1.1"
+  }
+}
