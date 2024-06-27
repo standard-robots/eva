@@ -5,10 +5,14 @@
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "moduleDetection": "force",
+    "baseUrl": ".",
     "module": "ESNext",
 
     // Bundler mode
     "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "allowImportingTsExtensions": true,
     "allowJs": true,
 
