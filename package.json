@@ -6,6 +6,7 @@
   "module": "index.ts",
   "scripts": {
     "start": "bun ./src/server.ts",
+    "start:dev": "bun --watch ./src/server.ts",
     "dev": "bun test --watch",
     "test": "bun test",
     "lint": "eslint .",
@@ -16,6 +17,8 @@
   },
   "dependencies": {
     "@gitbeaker/rest": "^40.0.3",
+    "await-to-js": "^3.0.0",
+    "mitt": "^3.0.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {

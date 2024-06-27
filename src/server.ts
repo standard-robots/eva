@@ -1,12 +1,12 @@
-import { api } from './api'
+import { webhooks } from './webhooks'
 
 const server = Bun.serve({
   port: 3000,
-  async fetch() {
+  async fetch(req) {
+    await webhooks(req)
+
     return Response.json({
-      title: 'Bun',
-      description: 'A simple web server',
-      projects: await api.Projects.all(),
+      status: 'ok',
     })
   },
 })
